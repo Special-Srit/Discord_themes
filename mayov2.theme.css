@@ -1,0 +1,154 @@
+/**
+ * @name Trickal Re:vive Theme (Mayo.ver)  
+ * @version 1.0.6.3
+ * @description A 'Trickal Re:vive' Discord theme (Mayo.ver) Warning: This theme is *NOT OPTIMIZED* expect bugs and lag!
+ * @author Srit/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @BDEditor Translucence
+*/
+
+@import url('https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css');
+
+
+:root {
+  --app-bg: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayo.gif');
+  --app-blur: 9px;
+  --app-margin: 24px;
+  --app-radius: 8px;
+  --accent-hue: 42;
+  --accent-saturation: 94%;
+  --accent-lightness: 71%;
+  --accent-opacity: 1;
+  --sidebar-color: rgb(255, 77, 116, 0.4);
+  --main-content-color: rgb(47, 148, 209, 0.2);
+  --interactive-normal: #aaa;
+  --interactive-hover: #ddd;
+  --interactive-active: #FFFFFF;
+  --interactive-muted: #777;
+  --background-modifier-hover: rgb(255, 255, 255, 0.075);
+  --background-modifier-selected: rgb(255, 255, 255, 0.125);
+  --message-color: rgba(0, 0, 0, 0.4);
+  --message-radius: 8px;
+  --message-padding-top: 8px;
+  --message-padding-side: 8px;
+  --reply-hue: 112;
+  --reply-saturation: 77%;
+  --reply-lightness: 61%;
+  --reply-opacity: 1;
+  --textarea-color: 0, 43, 255;
+  --textarea-alpha: 0.12;
+  --textarea-alpha-focus: 0.28;
+  --textarea-radius: 22px;
+  --card-color: rgb(255, 150, 80, 0.4);
+  --card-color-hover: rgba(0, 0, 0, 0.5);
+  --card-color-select: rgba(0, 0, 0, 0.7);
+  --button-height: 32px;
+  --button-padding: 0 16px;
+  --button-radius: 16px;
+  --customEmojiIconURL: url(https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif);
+  --customEmojiIconMask: url(https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif);
+  --discord-icon: none;
+  --home-icon: block;
+  --home-icon-url: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif');
+  --prompt-text: "수집품! 마요가 지켜보고 있음.";
+}
+
+/* Custom Emoji Button */
+[class*=emojiButton] [class*=spriteColored] {
+  background: var(--customEmojiIconURL) center/contain no-repeat;
+}
+
+[class*=emojiButton] [class*=spriteGreyscale] {
+  mask: var(--customEmojiIconMask) center/contain no-repeat;
+}
+
+[class^=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  video {
+    visibility: hidden;
+  }
+}
+
+[class*=childWrapper]>svg:not([class*=favoriteIcon]) {
+  display: var(--discord-icon);
+}
+
+[class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
+  content: '';
+  display: var(--home-icon);
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: var(--text-normal);
+  mask-image: var(--home-icon-url) center/contain no-repeat !important;
+  mask: var(--home-icon-url) center/contain no-repeat !important;
+}
+
+/*    custom chat bar input text    */
+[class*=channelTextAreaDisabled] {
+  --prompt-text: "여긴 마요도 못염...";
+}
+
+[class*=textAreaForUserProfile] {
+  --prompt-text: "수집품은 여기다가 뭐 적을거임?";
+  opacity: 50%;
+}
+
+[class*=placeholder][class*=slateTextArea] {
+  visibility: hidden;
+}
+
+[class*=placeholder][class*=slateTextArea]::before {
+  visibility: visible;
+  content: var(--prompt-text);
+}
+
+.typingDots_b88801>.ellipsis_b88801+.text_b88801 {
+  font-size: 0;
+  height: 16px;
+
+  >strong {
+    font-size: 12px;
+
+    &::after {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    &:last-child::after {
+      content: " 이 말하고 있는거 같음.";
+    }
+
+    &:last-child:not(:first-child)::after {
+      content: " 들이 말하고 있는거 같음.";
+    }
+
+    &:nth-last-child(2)::after {
+      content: ", 하고 "
+    }
+
+    &:nth-last-child(3)::after {
+      content: ", 하고";
+    }
+  }
+
+  &:not(:has(>strong))::after {
+    font-size: 12px;
+    content: "여러명이 한번에 말하고 있는거 같음";
+  }
+}
