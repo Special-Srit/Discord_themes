@@ -6,9 +6,7 @@
  * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
  * @BDEditor Translucence
 */
-
 @import url('https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css');
-
 
 :root {
   --app-bg: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayo.gif');
@@ -53,7 +51,6 @@
   --prompt-text: "수집품! 마요가 지켜보고 있음.";
 }
 
-/* Custom Emoji Button */
 [class*=emojiButton] [class*=spriteColored] {
   background: var(--customEmojiIconURL) center/contain no-repeat;
 }
@@ -99,7 +96,6 @@
   mask: var(--home-icon-url) center/contain no-repeat !important;
 }
 
-/*    custom chat bar input text    */
 [class*=channelTextAreaDisabled] {
   --prompt-text: "여긴 마요도 못염...";
 }
