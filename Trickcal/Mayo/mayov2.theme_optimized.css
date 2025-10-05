@@ -9,7 +9,7 @@
 @import url('https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css');
 
 :root {
-  --app-bg: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayo.gif');
+  --app-bg: url('https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Mayo/mayo_bg.png');
   --app-blur: 9px;
   --app-margin: 24px;
   --app-radius: 8px;
@@ -43,11 +43,11 @@
   --button-height: 32px;
   --button-padding: 0 16px;
   --button-radius: 16px;
-  --customEmojiIconURL: url(https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif);
-  --customEmojiIconMask: url(https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif);
+  --customEmojiIconURL: url(https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Mayo/mayoheh.png);
+  --customEmojiIconMask: url(https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Mayo/mayoheh.png);
   --discord-icon: none;
   --home-icon: block;
-  --home-icon-url: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif');
+  --home-icon-url: url('https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Mayo/mayoheh.png');
   --prompt-text: "수집품! 마요가 지켜보고 있음.";
 }
 
@@ -70,7 +70,7 @@
     translate: 25%;
     width: 200px;
     height: 180px;
-    background-image: url('https://raw.githubusercontent.com/Special-Srit/idk/refs/heads/main/mayoheh.gif') !important;
+    background-image: url('https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Mayo/mayoheh.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
