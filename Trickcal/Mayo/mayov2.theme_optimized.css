@@ -1,5 +1,5 @@
 /**
- * @name Trickal Re:vive Theme (Mayo.ver)  
+ * @name Trickal Re:vive Theme [optimized] (Mayo.ver)  
  * @version 1.0.6.3
  * @description A 'Trickal Re:vive' Discord theme (Mayo.ver) Warning: This theme is *NOT OPTIMIZED* expect bugs and lag!
  * @author Srit/CapnKitten
@@ -17,10 +17,10 @@
   --accent-saturation: 94%;
   --accent-lightness: 71%;
   --accent-opacity: 1;
-  --sidebar-color: rgb(255, 77, 116, 0.4);
+  --sidebar-color: rgba(255, 45, 90, 0.4);
   --main-content-color: rgb(47, 148, 209, 0.2);
-  --interactive-normal: #aaa;
-  --interactive-hover: #ddd;
+  --interactive-normal: #eeeded;
+  --interactive-hover: #ffffff;
   --interactive-active: #FFFFFF;
   --interactive-muted: #777;
   --background-modifier-hover: rgb(255, 255, 255, 0.075);

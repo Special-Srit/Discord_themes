@@ -19,7 +19,7 @@
   --accent-saturation: 94%;
   --accent-lightness: 71%;
   --accent-opacity: 1;
-  --sidebar-color: rgb(255, 77, 116, 0.4);
+  --sidebar-color: rgba(255, 45, 90, 0.4);
   --main-content-color: rgb(47, 148, 209, 0.2);
   --interactive-normal: #aaa;
   --interactive-hover: #ddd;
