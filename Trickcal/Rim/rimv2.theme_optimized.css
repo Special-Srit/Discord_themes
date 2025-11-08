@@ -9,7 +9,7 @@
 @import url('https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css');
 
 :root {
-  --app-bg: url('Rim_bg.png');
+  --app-bg: url('https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Rim/Rim_bg.png');
   --app-blur: 9px;  
   --app-margin: 24px;
   --app-radius: 8px;
@@ -43,11 +43,11 @@
   --button-height: 32px;
   --button-padding: 0 16px;
   --button-radius: 16px;
-  --customEmojiIconURL: url(rim_icon.png);
-  --customEmojiIconMask: url(rim_icon.png);
+  --customEmojiIconURL: url(https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Rim/rim_icon.png);
+  --customEmojiIconMask: url(https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Rim/rim_icon.png);
   --discord-icon: none;
   --home-icon: block;
-  --home-icon-url: url('rim_icon.png');
+  --home-icon-url: url('https://raw.githubusercontent.com/Special-Srit/Discord_themes/refs/heads/main/Trickcal/Rim/rim_icon.png');
   --prompt-text: "뭘 적으시든 제 개그보단 못할겁니다 크큭..";
 }
 
